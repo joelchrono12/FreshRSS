@@ -15,6 +15,10 @@
  * @property-read string $default_state
  * @property string $default_view
  * @property string|bool $display_categories
+ * @property string $show_tags
+ * @property int $show_tags_max
+ * @property string $show_author_date
+ * @property string $show_feed_name
  * @property bool $display_posts
  * @property string $email_validation_token
  * @property-read string $enabled
@@ -57,6 +61,7 @@
  * @property bool $topline_summary
  * @property string $topline_thumbnail
  * @property int $ttl_default
+ * @property int $dynamic_opml_ttl_default
  * @property-read bool $unsafe_autologin_enabled
  * @property string $view_mode
  * @property array<string,mixed> $volatile

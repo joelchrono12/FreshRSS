@@ -10,6 +10,7 @@
 	background: variables.$sid-bg;
 	display: block;
 	width: auto;
+	height: 3rem;
 	table-layout: none;
 
 	.item {
@@ -101,13 +102,11 @@
 			}
 		}
 	}
-
-
 }
 
 /*=== Body */
 #global {
-	height: calc(100% - 85px);
+	height: calc(100% - 4rem);
 }
 
 
@@ -143,10 +142,6 @@
 	text-align: center;
 }
 
-#new-article:hover {
-	background: variables.$main-first-alt;
-}
-
 #new-article > a {
 	line-height: 3em;
 	font-weight: bold;
@@ -155,6 +150,7 @@
 
 #new-article > a:hover {
 	text-decoration: none;
+	background: variables.$main-first-alt;
 }
 
 /*=== Day indication */

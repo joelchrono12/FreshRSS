@@ -4,7 +4,6 @@
 /*============*/
 html, body {
 	background: #1c1c1c;
-	height: 100%;
 	color: #888;
 	font-family: "OpenSans", "Cantarell", "Helvetica", "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -205,9 +204,18 @@ a.btn {
 	background: linear-gradient(to top, #4a5d7a 0%, #26303f 100%);
 }
 
+.btn:hover .icon {
+	filter: brightness(1);
+}
+
 .btn.active,
 .dropdown-target:target ~ .btn.dropdown-toggle {
 	background: #333;
+}
+
+.btn.active .icon,
+.dropdown-target:target ~ .btn.dropdown-toggle .icon {
+	filter: brightness(1);
 }
 
 .btn:active {
@@ -225,6 +233,10 @@ a.btn {
 
 .btn-important:active {
 	background: #26303f;
+}
+
+.btn-important .icon {
+	filter: brightness(1);
 }
 
 .btn-attention {
@@ -435,26 +447,10 @@ a.btn {
 .pagination {
 	background: #1c1c1c;
 	color: #888;
-	font-size: 0.8em;
-	text-align: center;
-}
-
-.pagination .item.pager-current {
-	background: #111;
-	font-size: 1.5em;
-	font-weight: bold;
 }
 
 .pagination .item a {
-	display: block;
-	font-style: italic;
-	line-height: 3em;
-	text-decoration: none;
 	color: #666;
-}
-
-.pagination .item a:hover {
-	background-color: #111;
 }
 
 .pagination:first-child .item {
@@ -596,11 +592,6 @@ a.btn {
 
 .header .item.search input:focus {
 	width: 350px;
-}
-
-/*=== Body */
-#global {
-	height: calc(100% - 85px);
 }
 
 .aside {

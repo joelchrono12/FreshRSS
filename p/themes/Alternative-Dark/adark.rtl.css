@@ -4,7 +4,6 @@
 /*============*/
 html, body {
 	background: #171717;
-	height: 100%;
 	color: #999;
 	font-family: "OpenSans", "Cantarell", "Helvetica", "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -187,8 +186,12 @@ a.btn {
 }
 
 .btn-important:hover {
-	background: #0062b7;
+	background: #45699a;
 	color: #eee;
+}
+
+.btn-important .icon {
+	filter: brightness(3);
 }
 
 .btn-important:active {
@@ -313,7 +316,7 @@ a.btn {
 }
 
 .dropdown-menu::after {
-	border-color: #ddd;
+	border-color: #333;
 }
 
 .dropdown-header {
@@ -395,10 +398,6 @@ a.btn {
 }
 
 /*=== Pagination */
-.pagination .item a {
-	line-height: 3em;
-}
-
 .pagination {
 	color: #999;
 	border-top: 1px solid #999;
@@ -501,7 +500,6 @@ a.btn {
 /*=== Header */
 .header {
 	background: #171717;
-	height: 85px;
 }
 
 .header > .item {
@@ -529,10 +527,6 @@ a.btn {
 }
 
 /*=== Body */
-#global {
-	height: calc(100% - 85px);
-}
-
 .aside {
 	background: #262626;
 }
@@ -1120,10 +1114,6 @@ a.btn {
 		display: none!important;
 		font-size: 1.1rem;
 		text-shadow: none;
-	}
-
-	.pagination {
-		border-top: 1px solid #292929;
 	}
 
 	.flux:not(.current):hover .item.title {

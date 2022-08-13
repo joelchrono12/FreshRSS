@@ -4,7 +4,6 @@
 /*============*/
 html, body {
 	background: #fafafa;
-	height: 100%;
 	font-family: "OpenSans", "Cantarell", "Helvetica", "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
@@ -450,13 +449,7 @@ a.btn {
 }
 
 .pagination .item a {
-	line-height: 3em;
 	color: #000;
-}
-
-.pagination .item a:hover {
-	background: #34495e;
-	color: #ecf0f1;
 }
 
 #load_more.loading,
@@ -599,11 +592,6 @@ a.btn {
 
 .header .item.search input:focus {
 	width: 350px;
-}
-
-/*=== Body */
-#global {
-	height: calc(100% - 85px);
 }
 
 .aside {

@@ -44,7 +44,6 @@ select:invalid {
 
 html,
 body {
-	height: 100%;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -263,6 +262,9 @@ form th {
 .nav-list .item.error a {
 	color: #c46178;
 }
+.nav-list .item .icon {
+	filter: brightness(3);
+}
 .nav-list .disable {
 	text-align: center;
 	background: #fcfcfc;
@@ -390,25 +392,9 @@ form th {
 .pagination {
 	background: #e3e3e3;
 	color: #181621;
-	font-size: 0.8em;
-	text-align: center;
-}
-.pagination .item.pager-current {
-	background: #22303d;
-	color: #e3e3e3;
-	font-size: 1.5em;
-	font-weight: bold;
 }
 .pagination .item a {
-	display: block;
 	color: #181621;
-	font-style: italic;
-	line-height: 3em;
-	text-decoration: none;
-}
-.pagination .item a:hover {
-	background: #22303d;
-	color: #e3e3e3;
 }
 
 #load_more.loading,
@@ -571,6 +557,9 @@ form th {
 		background: rgba(255, 255, 255, 0.3);
 	}
 }
+.header {
+	height: auto;
+}
 .header > .item {
 	vertical-align: middle;
 }
@@ -600,6 +589,9 @@ form th {
 	right: 0;
 	z-index: 1000;
 	width: 35px;
+}
+.header .item.configure .dropdown .icon {
+	filter: brightness(3);
 }
 
 .aside {
@@ -667,7 +659,9 @@ form th {
 .prompt p {
 	margin: 20px 0;
 }
-
+#global {
+	height: 100vh;
+}
 #new-article {
 	background: #0062be;
 	font-size: 1em;
